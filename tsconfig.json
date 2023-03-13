@@ -1,5 +1,5 @@
 {
-  "extends":"@ss1ggzxc/tsconfig",
+  "extends":"@codecrackerdev/tsconfig",
   "compilerOptions": {
     "outDir": "dist"
   },
