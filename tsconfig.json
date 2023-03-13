@@ -1,0 +1,9 @@
+{
+  "extends":"@ss1ggzxc/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ]
+}
