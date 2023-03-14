@@ -1,4 +1,14 @@
-export interface optionsData {
+export type InputQuery = {name: string | number, value: string | number};
+export type InputData = {BodyValue?: any, query?: InputQuery[]};
+export type result = {
+  type: string,
+  status: number,
+  statusText: string,
+  ok: boolean,
+  data?: any
+};
+
+export type optionsData = {
   mode?: 'cors' | 'no-cors',
   cache?: "default" |"no-cache" | "reload" | "force-cache" | "only-if-cached",
   credentials?: "include" | "same-origin" | "omit",

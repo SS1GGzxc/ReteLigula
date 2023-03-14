@@ -1,8 +1,9 @@
 import {encrypt} from 'cryptoloc'
+import { InputQuery } from '../../configs/configsData.js';
 
 export default class Querys {
-  public async createQuery(query: {name: string, value: string | number }[]) {
-    var resp: string = `?`;
+  public async createQuery(query: InputQuery[]) {
+    var resp = `?`;
     if (query.length >= 2) {
       for (var i = 0; i < query.length; i++) {
         resp += `${query[i]!.name}=${await encrypt(query[i]!.value.toString())}&`
