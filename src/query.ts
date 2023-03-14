@@ -1,4 +1,4 @@
-import {encrypt} from 'cryptis'
+import {encrypt} from 'cryptoloc'
 
 export default class Querys {
   public async createQuery(query: {name: string, value: string | number }[]) {
