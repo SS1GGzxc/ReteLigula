@@ -18,7 +18,7 @@
 
   const app = new ReteLigula();
 
-  const response = await app.post("url", options); // or get, put, delete
+  const response = await app.post("url", data?, options?); // or get, put, delete
 
   console.log(response.data); // you can get from 'response': data, type, status, statusText and ok
 ```
