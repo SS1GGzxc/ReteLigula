@@ -20,5 +20,5 @@
 
   const response = await app.post("url", options); // or get, put, delete
 
-  console.log(response.json());
+  console.log(response.data); // you can get from 'response': data, type, status, statusText and ok
 ```
