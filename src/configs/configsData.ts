@@ -1,4 +1,4 @@
-export type InputQuery = {name: string | number, value: string | number};
+export type InputQuery = {name: string | number, value: string | number, typeEcnode: "Hex" | "Base64"};
 export type InputData = {BodyValue?: any, query?: InputQuery[]};
 export type result = {
   type: string,
